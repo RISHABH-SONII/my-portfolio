@@ -1,13 +1,6 @@
-.header {
-  background-color: black; /* primary color */
-}
-
-.footer {
-  text-align: center;
-  padding: 16px;
-  background-color: #f5f5f5; /* light grey */
-}
-
-.mainContent {
-  margin: 32px 0;
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
 }
