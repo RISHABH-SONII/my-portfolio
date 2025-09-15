@@ -1,0 +1,57 @@
+.animatedBg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.gradientOrb {
+  position: absolute;
+  width: 24rem; /* 96 * 0.25rem */
+  height: 24rem;
+  border-radius: 9999px;
+  filter: blur(48px); /* blur-3xl */
+  opacity: 0.1;
+}
+
+.orbBlue {
+  top: 25%;
+  left: 25%;
+  background: #000000; /* blue-500 */
+}
+
+.orbPurple {
+  top: 75%;
+  right: 25%;
+  background: #544f54; /* purple-500 */
+}
+
+.orbEmerald {
+  bottom: 25%;
+  left: 33.3333%;
+  background: #000000; /* emerald-500 */
+}
+
+.particles {
+  position: absolute;
+  inset: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 0.65rem; /* w-2 */
+  height: 0.65rem; /* h-2 */
+  background: rgba(196, 196, 196, 0.2);
+  border-radius: 9999px;
+}
+
+.gridPattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-size: 50px 50px;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+}

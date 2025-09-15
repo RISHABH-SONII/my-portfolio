@@ -9,9 +9,16 @@ const Header = () => {
   return (
     <div className={classes.navbar}>
       <div className={classes.firstSection}>
-        <Link href="/">
-          <Image src={Images.headerLogoImage1.src} alt="Header Logo 1" width={40} height={40} />
-        </Link>
+        <div className={classes.logoWrapper}>
+          <Link href="/">
+            <Image
+              src={Images.headerLogoImage1.src}
+              alt="Header Logo 1"
+              fill
+              className={classes.headerLogoImage}
+            />
+          </Link>
+        </div>
         <Link href="/" className={classes.linkStyle}>
           <div className={classes.headerLogoText}>Rishabh Soni</div>
         </Link>
