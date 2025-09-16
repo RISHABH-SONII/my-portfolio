@@ -1,4 +1,4 @@
-.animatedBg {
+/* .animatedBg {
   position: fixed;
   inset: 0;
   overflow: hidden;
@@ -8,29 +8,29 @@
 
 .gradientOrb {
   position: absolute;
-  width: 24rem; /* 96 * 0.25rem */
+  width: 24rem;
   height: 24rem;
   border-radius: 9999px;
-  filter: blur(48px); /* blur-3xl */
+  filter: blur(48px);
   opacity: 0.1;
 }
 
 .orbBlue {
   top: 25%;
   left: 25%;
-  background: #000000; /* blue-500 */
+  background: #000000;
 }
 
 .orbPurple {
   top: 75%;
   right: 25%;
-  background: #544f54; /* purple-500 */
+  background: #544f54;
 }
 
 .orbEmerald {
   bottom: 25%;
   left: 33.3333%;
-  background: #000000; /* emerald-500 */
+  background: #000000;
 }
 
 .particles {
@@ -40,8 +40,8 @@
 
 .particle {
   position: absolute;
-  width: 0.65rem; /* w-2 */
-  height: 0.65rem; /* h-2 */
+  width: 0.65rem;
+  height: 0.65rem;
   background: rgba(196, 196, 196, 0.2);
   border-radius: 9999px;
 }
@@ -54,4 +54,63 @@
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+} */
+
+/* Aurora Mode */
+.aurora-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #00f260, #0575e6, #7b4397);
+  background-size: 600% 600%;
+  z-index: 0;
+}
+
+/* Blobs Mode */
+.blobs-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 200, 255, 0.4), transparent);
+  border-radius: 50%;
+  animation: blobMove 20s infinite ease-in-out alternate;
+}
+
+.blob:nth-child(1) {
+  top: 20%;
+  left: 15%;
+  background: radial-gradient(circle, rgba(255, 0, 150, 0.4), transparent);
+  animation-duration: 25s;
+}
+
+.blob:nth-child(2) {
+  bottom: 20%;
+  right: 20%;
+  background: radial-gradient(circle, rgba(0, 200, 255, 0.4), transparent);
+  animation-duration: 30s;
+}
+
+.blob:nth-child(3) {
+  top: 40%;
+  right: 40%;
+  background: radial-gradient(circle, rgba(255, 200, 0, 0.4), transparent);
+  animation-duration: 35s;
+}
+
+@keyframes blobMove {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(50px, -50px) scale(1.2);
+  }
+  100% {
+    transform: translate(-50px, 50px) scale(1);
+  }
 }
