@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className={classes.mainLayout}>
             <AnimatedBackground />
             <Head>
-              <link rel="preload" href={Images.heroImage.src} as="image" type="image/webp" />
+              <link rel="preload" href={Images.headerLogoImage1.src} as="image" type="image/webp" />
             </Head>
 
             {/* Header */}

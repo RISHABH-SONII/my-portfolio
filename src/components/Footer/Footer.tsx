@@ -174,14 +174,15 @@ export default function Footer() {
             <Typography variant="subtitle1" fontWeight={600} mb={1}>
               Social
             </Typography>
+
             <Link
               href="https://github.com/RISHABH-SONII"
               target="_blank"
               rel="noopener noreferrer"
               className={classes.footerSocialLinks}
             >
-              <Box display="flex" alignItems="center" gap={1} mb={1.5}>
-                <GitHub sx={{ fontSize: 20, color: 'white' }} />
+              <Box className={classes.boxWrapper}>
+                <GitHub className={classes.linkIcon} />
                 <Typography variant="body2">GitHub</Typography>
               </Box>
             </Link>
@@ -191,8 +192,8 @@ export default function Footer() {
               rel="noopener noreferrer"
               className={classes.footerSocialLinks}
             >
-              <Box display="flex" alignItems="center" gap={1} mb={1.5}>
-                <LinkedIn sx={{ fontSize: 20, color: 'white' }} />
+              <Box className={classes.boxWrapper}>
+                <LinkedIn className={classes.linkIcon} />
                 <Typography variant="body2">LinkedIn</Typography>
               </Box>
             </Link>
@@ -203,8 +204,8 @@ export default function Footer() {
               rel="noopener noreferrer"
               className={classes.footerSocialLinks}
             >
-              <Box display="flex" alignItems="center" gap={1} mb={1.5}>
-                <Facebook sx={{ fontSize: 20, color: 'white' }} />
+              <Box className={classes.boxWrapper}>
+                <Facebook className={classes.linkIcon} />
                 <Typography variant="body2">Facebook</Typography>
               </Box>
             </Link>
@@ -215,8 +216,8 @@ export default function Footer() {
               rel="noopener noreferrer"
               className={classes.footerSocialLinks}
             >
-              <Box display="flex" alignItems="center" gap={1} mb={1.5}>
-                <Instagram sx={{ fontSize: 20, color: 'white' }} />
+              <Box className={classes.boxWrapper}>
+                <Instagram className={classes.linkIcon} />
                 <Typography variant="body2">Instagram</Typography>
               </Box>
             </Link>

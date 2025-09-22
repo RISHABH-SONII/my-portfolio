@@ -105,6 +105,23 @@
   justify-content: space-between;
   color: #fff;
   text-decoration: none;
+  /* cursor: pointer;
+  position: relative; */
+  /* z-index: 1; */
+}
+
+.boxWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 20;
+  color: white;
+}
+
+.footerSocialLinks :hover {
+  color: lightskyblue;
+  transition: color 0.3s ease;
 }
 
 .language {
