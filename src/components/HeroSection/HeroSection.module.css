@@ -2,54 +2,61 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: start;
-  justify-content: space-between;
+  justify-content: start;
   color: #fff;
-  padding: 2.5% 5% 0% 5%;
+  padding: 2.5% 4.5% 2.5% 4.5%;
   background-color: #000;
-  flex-wrap: wrap; /* allow wrapping on small screens */
+  flex-wrap: wrap;
 }
 
 .textColumn {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
+  justify-content: start;
   min-width: 300px;
-  margin-bottom: 2rem;
 }
 
 .welcomeText {
+  margin: 5;
   font-size: 1rem;
   letter-spacing: 2px;
-  margin-bottom: 0.5rem;
   color: #aaa;
 }
 
 .nameText {
-  font-size: 3rem;
+  margin: 0;
+  margin-top: 1%;
+  font-family: cursive;
+  line-height: 1.05;
+  font-size: 4rem;
   font-weight: 400;
-  margin-bottom: 0.5rem;
-  color: white;
-  letter-spacing: 1rem;
+  color: rgb(127, 137, 147);
+  letter-spacing: 0.25rem;
+  text-shadow: 2px 4px 6px rgba(54, 103, 201, 0.6);
 }
 
 .nameText1 {
   font-weight: 600;
-  color: #717474;
+  color: whitesmoke;
 }
 
 .techBackground {
+  margin: 0;
+  margin-top: 1%;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 1rem;
-  color: #aaa;
+  color: #e0cece;
+  display: flex;
+  vertical-align: middle;
+  gap: 8px;
 }
 
 .taglineText {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  min-height: 2em;
+  margin: 0;
+  margin-top: 1%;
+  font-size: 1.5rem;
 }
 
 .imageColumn {
@@ -63,7 +70,7 @@
 
 .heroImage {
   width: 100%;
-  max-width: 600px;
+  max-width: 550px;
   height: 70vh;
   border-radius: 12px;
   object-fit: cover;
