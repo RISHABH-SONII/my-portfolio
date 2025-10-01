@@ -32,9 +32,12 @@
   line-height: 1.05;
   font-size: 4rem;
   font-weight: 400;
-  color: rgb(127, 137, 147);
   letter-spacing: 0.25rem;
-  text-shadow: 2px 4px 6px rgba(54, 103, 201, 0.6);
+  background: linear-gradient(to bottom, white 0%, #e0e0e0 20%, grey 80%, #6e6e6e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .nameText1 {
@@ -44,19 +47,45 @@
 
 .techBackground {
   margin: 0;
-  margin-top: 1%;
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #e0cece;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  font-size: 1.4rem;
+  font-weight: 700;
   display: flex;
+  align-items: center;
   vertical-align: middle;
   gap: 8px;
+  background: linear-gradient(to bottom, white 0%, #e0e0e0 20%, rgb(19, 86, 172) 80%, #4c66e7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .taglineText {
   margin: 0;
   margin-top: 1%;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-family: fantasy;
+  color: snow;
+  text-align: justify;
+}
+
+.buttonRow {
+  display: flex;
+  margin-top: 4%;
+  gap: 1rem;
+}
+
+.myButton {
+  text-transform: none !important;
+  background: transparent !important;
+  border: 1px solid rgb(255, 255, 255) !important;
+}
+
+.myButton:hover {
+  border: 1px solid #3398d7ff !important;
+  color: rgb(85, 165, 215);
 }
 
 .imageColumn {
