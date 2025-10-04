@@ -62,6 +62,10 @@
   color: transparent;
 }
 
+.taglineContainer {
+  height: 8rem;
+}
+
 .taglineText {
   margin: 0;
   margin-top: 1%;
@@ -75,6 +79,26 @@
   display: flex;
   margin-top: 4%;
   gap: 1rem;
+}
+
+.buttonRow1 {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.socialButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 7rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5%;
+  font-size: 0.95rem;
 }
 
 .myButton {

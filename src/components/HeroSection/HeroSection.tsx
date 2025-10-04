@@ -5,7 +5,8 @@ import classes from './HeroSection.module.css';
 import Image from 'next/image';
 import { Images } from '@/assets';
 import { Button } from '@mui/material';
-import { Info, LocationOn, ShoppingBag, Work } from '@mui/icons-material';
+import { GitHub, Info, LocationOn, ShoppingBag, Work } from '@mui/icons-material';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function HeroSection() {
   const [tagline, setTagline] = useState('');
@@ -32,14 +33,21 @@ export default function HeroSection() {
           <Image src={Images.braces} alt="curly braces" height={22} width={25} />
           Flutter Developer || Web Developer
         </h2>
-        <p className={classes.taglineText}>{tagline}</p>
+        <div className={classes.taglineContainer}>
+          <p className={classes.taglineText}>{tagline}</p>
+        </div>
+
         <div className={classes.buttonRow}>
           <Button
             className={classes.myButton}
             type="submit"
             variant="contained"
             color="primary"
-            startIcon={<Image alt="hire Icon" src={Images.officeBagIcon} height={25} width={25} />}
+            startIcon={<Image alt="hire Icon" src={Images.hireMe2} height={25} width={25} />}
+            onClick={() =>
+              (window.location.href =
+                'mailto:rishabhsoni@gmail.com?subject=Job%20Opportunity&body=Hi%20Rishabh,')
+            }
           >
             Hire Me
           </Button>
@@ -51,6 +59,53 @@ export default function HeroSection() {
             startIcon={<Image alt="info Icon" src={Images.infoIcon} height={25} width={25} />}
           >
             About Me
+          </Button>
+          <Button
+            className={classes.myButton}
+            variant="contained"
+            color="primary"
+            startIcon={<Image alt="cv Icon" src={Images.cvIcon1} height={20} width={20} />}
+            onClick={() => {
+              try {
+                const cvUrl = 'https://raw.githubusercontent.com/RISHABH-SONII/cv/main/resume.pdf';
+                const link = document.createElement('a');
+                link.href = cvUrl;
+                link.download = 'Rishabh_Soni_Resume.pdf'; // File name shown when saving
+                document.body.appendChild(link);
+                link.click();
+                link.remove();
+              } catch (error) {
+                console.error('Error downloading CV:', error);
+                alert('Sorry, there was an issue downloading the CV. Please try again later.');
+              }
+            }}
+          >
+            Download CV
+          </Button>
+        </div>
+
+        <div className={classes.buttonRow1}>
+          <Button
+            className={classes.myButton}
+            type="submit"
+            variant="contained"
+            color="primary"
+            startIcon={<Image alt="info Icon" src={Images.github} height={25} width={25} />}
+            onClick={() => window.open('https://github.com/RISHABH-SONII', '_blank')}
+          >
+            Git-Hub
+          </Button>
+          <Button
+            className={classes.myButton}
+            type="submit"
+            variant="contained"
+            color="primary"
+            startIcon={<Image alt="info Icon" src={Images.linkedIn} height={25} width={25} />}
+            onClick={() =>
+              window.open('https://www.linkedin.com/in/rishabh-soni-60915a227', '_blank')
+            }
+          >
+            Linked-In&nbsp;&nbsp;
           </Button>
         </div>
       </div>
